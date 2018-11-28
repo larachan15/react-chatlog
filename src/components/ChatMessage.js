@@ -6,8 +6,10 @@ const ChatMessage = (props) => {
   const body = props.body;
   const timestamp = props.timeStamp;
 
+  const messageType = sender === "Estragon" ? 'remote' : 'local';
+
   return (
-    <section className="chat-entry">
+    <section className={"chat-entry " + messageType}>
       <section className="entry-bubble">
         <div className="entry-name">{sender}</div>
         <div className="entry-body">{body}</div>

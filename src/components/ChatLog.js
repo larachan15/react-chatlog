@@ -6,7 +6,7 @@ const ChatLog = (props) => {
     return <ChatMessage key={i} sender={message.sender} body={message.body} timeStamp={message.timeStamp} />
   });
   return (
-    <section className="timeline">{parsedData}</section>
+    <section className="chat-log">{parsedData}</section>
   );
 };
 

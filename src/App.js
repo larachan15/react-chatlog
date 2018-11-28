@@ -8,6 +8,8 @@ class App extends Component {
   render() {
     console.log(chatMessages);
 
+    // participants = []
+
     return (
       <div className="App">
         <header className="App-header">
