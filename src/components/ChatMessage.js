@@ -7,10 +7,12 @@ const ChatMessage = (props) => {
   const timestamp = props.timeStamp;
 
   return (
-    <section>
-      <div className="chat-sender">{sender}</div>
-      <div className="chat-body">{body}</div>
-      <div className="chat-time"><Timestamp time={timestamp} /></div>
+    <section className="chat-entry">
+      <section className="entry-bubble">
+        <div className="entry-name">{sender}</div>
+        <div className="entry-body">{body}</div>
+        <div className="entry-time"><Timestamp time={timestamp} /></div>
+      </section>
     </section>
   );
 }
